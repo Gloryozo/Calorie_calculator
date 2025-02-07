@@ -110,7 +110,7 @@ fun WeightField(weightInput: String, onValueChange: (String) -> Unit) {
       OutlinedTextField(
        value = weightInput,
        onValueChange=onValueChange,
-       label={Text(text="Enter weight")},
+       label={Text(text= stringResource(R.string.enter_weight))},
        singleLine = true,
        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
        modifier = Modifier.fillMaxWidth()
@@ -126,7 +126,7 @@ fun GenderChoices(male: Boolean, setGenderMale:(Boolean)->Unit){
               selected = male,
               onClick = { setGenderMale(true) }
           )
-          Text(text = "Male")
+          Text(text = stringResource(R.string.male))
       }
       Row (
        verticalAlignment = Alignment.CenterVertically
@@ -135,7 +135,7 @@ fun GenderChoices(male: Boolean, setGenderMale:(Boolean)->Unit){
               selected = !male,
               onClick = { setGenderMale(false) }
           )
-          Text(text = "Female")
+          Text(text = stringResource(R.string.female))
       }
     }
 }
@@ -205,7 +205,7 @@ fun Calculation(male: Boolean,weight: Int,intensity: Float, setResult:(Int)->Uni
         },
         modifier = Modifier.fillMaxWidth()
     ) {
-        Text(text = "CALCULATE")
+        Text(text = stringResource(R.string.calculate))
     }
 }
 @Preview(showBackground = true)

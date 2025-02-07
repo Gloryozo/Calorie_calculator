@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Calories_excercise</string>
     <string name="calories">Calories</string>
+    <string name="enter_weight">Enter weight</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="calculate">CALCULATE</string>
 </resources>
